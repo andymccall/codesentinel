@@ -11,9 +11,20 @@ NEOEMU     = neo
 NEO_HOME   = ~/development/tools/neo6502/
 
 # List all the source files that need to be compiled and linked together.
-# Add any new .asm files to this list.
 SOURCES =   src/main.asm \
-            src/app/handlers.asm \
+            src/app/app.asm \
+            src/app/messages.asm \
+            src/app/handlers/main.asm \
+            src/app/handlers/file.asm \
+            src/app/handlers/edit.asm \
+            src/app/handlers/help.asm \
+            src/app/actions/new.asm \
+            src/app/actions/open.asm \
+            src/app/actions/save.asm \
+            src/app/actions/cut.asm \
+            src/app/actions/copy.asm \
+            src/app/actions/paste.asm \
+            src/app/actions/about.asm \
             src/lib/menu.asm \
             src/drivers/neo6502/video.asm \
             src/drivers/neo6502/input.asm
